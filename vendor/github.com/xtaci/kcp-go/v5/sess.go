@@ -24,7 +24,8 @@ import (
 
 const (
 	// 16-bytes nonce for each packet
-	nonceSize = 16
+	// +4 for obs
+	nonceSize = 16 + 4
 
 	// 4-bytes packet checksum
 	crcSize = 4
@@ -548,6 +549,9 @@ func (s *UDPSession) output(buf []byte) {
 	// 2&3. crc32 & encryption
 	if s.block != nil {
 		s.nonce.Fill(buf[:nonceSize])
+		// crypt, no difference
+		//binary.LittleEndian.PutUint32(buf[16:], 0x88888888)
+
 		checksum := crc32.ChecksumIEEE(buf[cryptHeaderSize:])
 		binary.LittleEndian.PutUint32(buf[nonceSize:], checksum)
 		s.block.Encrypt(buf, buf)
