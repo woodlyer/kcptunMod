@@ -1,3 +1,13 @@
+kcptun has been blocked.  
+this repository help you get to the world safety.  
+code base on kcptun v20230103.  
+use ./mybuild.sh to generate binary.
+
+
+
+
+----------------------------------------------------
+
 # <img src="logo.png" alt="kcptun" height="54px" /> 
 
 [![Release][13]][14] [![Powered][17]][18] [![MIT licensed][11]][12] [![Build Status][3]][4] [![Go Report Card][5]][6] [![Downloads][15]][16] [![Docker][1]][2] 
