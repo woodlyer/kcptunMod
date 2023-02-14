@@ -1,7 +1,11 @@
-kcptun has been blocked.  
-this repository help you get to the world safety.  
-code base on kcptun v20230103.  
-use ./mybuild.sh to generate binary.
+# kcptunMod
+A mod version of kcptun.
+
+As everyone knows that kcptun has been blocked.  
+This repository help you get to everywhere of the world safety.  
+Code base on kcptun v20230103.  
+Use ./mybuild.sh to generate binary.   
+OR just download it from release page.
 
 
 
